@@ -1,0 +1,161 @@
+.App {
+  text-align: justify;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+li{
+  padding: 0;
+  margin:0
+}
+h1,h2{
+  text-align: center;
+}
+.body{
+  width: 80%;
+}
+table,td,th
+{
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+th{
+  text-align: center;
+}
+td:nth-child(1){
+  text-align: center;
+}
+td:nth-child(2){
+  
+  background-color: rgb(243, 207, 140);
+}
+td:nth-child(3){
+  background-color: #e4e471;
+}
+td:nth-child(4){
+  background-color: rgb(148, 235, 148);
+}
+td:nth-child(5){
+  background-color: rgb(231, 81, 81);
+}
+
+td:hover{
+  transform: scale(1.10);
+  opacity: 0.7;
+  cursor: pointer;
+}
+td{
+  transition: transform 0.2;
+}
+.countryi{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+
+  
+}
+.cardclass{
+  margin:15px;
+  padding :10px;
+  border-radius: 5px;
+  position: relative;
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+  box-shadow: 2px 5px rgb(231, 230, 230);
+  height:150px;
+  width:150px;
+  z-index:1
+}
+
+.cardclass:hover{
+
+  box-shadow: 2px 5px 2px 5px rgb(231, 230, 230);
+}
+.green:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  background: rgb(186, 230, 186);
+  z-index: -1;
+  transition: transform ease-out 0.3s;
+ 
+}
+
+.green:hover::after {
+  transform: scaleY(1);
+}
+.red:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  background: rgb(235, 169, 169);
+  z-index: -1;
+  transition: transform ease-out 0.3s;
+}
+
+.red:hover::after {
+  transform: scaleY(1);
+}
+.yellow:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  background:rgb(236, 236, 163);
+  z-index: -1;
+  transition: transform ease-out 0.3s;
+}
+
+.yellow:hover::after {
+  transform: scaleY(1);
+}
