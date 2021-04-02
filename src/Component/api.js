@@ -1,6 +1,6 @@
 import axios from "axios";
-import {useState,useEffect} from 'react';
-const count=1;
+import { useState, useEffect } from 'react';
+const count = 1;
 
 const stateInfo = {
   method: 'GET',
@@ -11,8 +11,8 @@ const stateInfo = {
   }
 };
 
-const Info=()=>{
-  const [state,setState]=useState([]);
+const Info = () => {
+  const [state, setState] = useState([]);
   useEffect(() => {
     axios.request(stateInfo).then(function (response) {
       console.log(response.data);
@@ -21,8 +21,8 @@ const Info=()=>{
       console.error(error);
       setState(error);
     })
-  },[count]);
-  
+  }, [count]);
+
   return state;
 }
 export default Info;

@@ -1,7 +1,40 @@
+body{
+  margin: 0px;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 .App {
   text-align: justify;
 }
 
+.header{
+  width: 100%;
+  box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px 0px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0px;
+ 
+ 
+}
+.inheader{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -30px;
+
+}
+.header p{
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  color: #282c34;
+}
+.header img{
+  width: 60px;
+  height: 60px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -62,21 +95,21 @@ td:nth-child(1){
 }
 td:nth-child(2){
   
-  background-color: rgb(243, 207, 140);
+  background-color: rgb(255, 247, 232);
 }
 td:nth-child(3){
-  background-color: #e4e471;
+  background-color: #ffffd5;
 }
 td:nth-child(4){
-  background-color: rgb(148, 235, 148);
+  background-color: rgb(225, 255, 225);
 }
 td:nth-child(5){
-  background-color: rgb(231, 81, 81);
+  background-color: rgb(255, 220, 220);
 }
 
 td:hover{
   transform: scale(1.10);
-  opacity: 0.7;
+  opacity: 2;
   cursor: pointer;
 }
 td{
@@ -85,6 +118,7 @@ td{
 .countryi{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
 
@@ -92,9 +126,13 @@ td{
 }
 .cardclass{
   margin:15px;
-  padding :10px;
+  padding :20px;
   border-radius: 5px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   background-color: rgb(247, 247, 247);
   text-align: center;
   box-shadow: 2px 5px rgb(231, 230, 230);
@@ -158,4 +196,51 @@ td{
 
 .yellow:hover::after {
   transform: scaleY(1);
+}
+.Orange:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  background:rgb(255, 221, 157);
+  z-index: -1;
+  transition: transform ease-out 0.3s;
+}
+
+.Orange:hover::after {
+  transform: scaleY(1);
+}
+ 
+@media only screen and (max-width:600px){
+  table{
+    margin: 2px;
+    font-size: 10px; 
+  }
+  table,td,th{
+    padding: 4px;
+  }
+  td:nth-child(1){
+   width: 100px;
+   overflow: hidden;
+  }
+  td:nth-child(2){
+   width: 30px;
+   overflow: hidden;
+  }
+  td:nth-child(3){
+    width: 50px;
+    overflow: hidden;
+   }
+  td:nth-child(4){
+    width: 50px;
+    overflow: hidden;
+   }
+  td:nth-child(5){
+    width: 50px;
+    overflow: hidden;
+   }
 }
