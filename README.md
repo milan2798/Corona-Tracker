@@ -19,6 +19,16 @@ step 4:
 
 showing details on the page and beutify accordingly
 
+Below are the some glimpse of the output :
+
+
+https://user-images.githubusercontent.com/41838197/113445980-78b02a80-9414-11eb-80e5-2cea0cbdaee1.mov
+
+
+
+
+
+For any query Mail me at : zadfiyamilan112@gmail.com
 
 
 
