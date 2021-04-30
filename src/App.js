@@ -1,27 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
 import corlog from './Component/corlog.png'
-import axios from "axios";
 import Info from './Component/api.js'
-import { useState, useEffect } from 'react';
 import Table from './Component/Table.js'
 import Card from './Component/Card.js'
+import Search from './Component/Search';
 
 
 function App() {
-  const [state, setstate] = useState([{}]);
 
 
   let db = Info();
   let dd = db.total_values;
   let dt = db.state_wise;
-  let st = [];
-  let p = "Andaman and Nicobar Islands";
+  // let det = [];
 
 
   let keys = [];
   // loop through the keys
   dd ? keys = Object.keys(dd) : console.log("none");
+  // dd ? det = Object.keys(dt).map((item) => dt[item].district):console.log("");
+  // dd?console.log(det):console.log("");
 
 
 
@@ -31,12 +29,13 @@ function App() {
       <div className="header">
         <div className="inheader">
           <h1>Corona Tracker</h1>
-          <img src={corlog} /></div>
+          <img src={corlog} alt="corona img" /></div>
 
         {dd ? <p>Last Updated : {dd[keys[6]]}</p> : <p></p>}
       </div>
-      <h2>India Info</h2>
-
+      <Search info={dt} />
+      <h2 className="countryname"><span>India Info</span></h2>
+      {console.log("render")}
       <hr style={{ width: "80%" }}></hr>
 
       {/* {dd ? console.log(keys) : null}
@@ -51,7 +50,7 @@ function App() {
         : <h3>Data is Loading Please wait......</h3>}
 
 
-      <h2>States Info</h2>
+      <h2 className="statename"><span>States Info</span></h2>
       <hr style={{ marginBottom: "20px", width: "80%" }}></hr>
       <table>
         <thead>

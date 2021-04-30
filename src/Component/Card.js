@@ -12,7 +12,7 @@ const Card=({inf,deltainf,text,color,tcolor})=>{
         <div className={`cardclass ${color}` }   style={cardstyle}>
 
             <h4>{inf}</h4>
-            {color=="Orange"?<h2>   </h2>:
+            {color==="Orange"?<h2>   </h2>:
             <h5 style={{color:tcolor}}>&#8593;{deltainf}</h5>
             }
 

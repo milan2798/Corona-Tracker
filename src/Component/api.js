@@ -6,8 +6,8 @@ const stateInfo = {
   method: 'GET',
   url: 'https://corona-virus-world-and-india-data.p.rapidapi.com/api_india',
   headers: {
-    'x-rapidapi-key': 'YOUR_RAPID_API_KEY',
-    'x-rapidapi-host': 'YOUR_RAPID_API_HOSTKEY'
+    'x-rapidapi-key': '959b4243e4mshbc54fc2a3419f89p1bb2d4jsndd5a39fb288f',
+    'x-rapidapi-host': 'corona-virus-world-and-india-data.p.rapidapi.com'
   }
 };
 
