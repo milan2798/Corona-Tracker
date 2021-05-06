@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a1998dfe.chunk.css",
-    "main.js": "/static/js/main.b35fb1c8.chunk.js",
-    "main.js.map": "/static/js/main.b35fb1c8.chunk.js.map",
+    "main.js": "/static/js/main.ac5c6b45.chunk.js",
+    "main.js.map": "/static/js/main.ac5c6b45.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3ce1144b.js",
     "runtime-main.js.map": "/static/js/runtime-main.3ce1144b.js.map",
     "static/js/2.4a178b1e.chunk.js": "/static/js/2.4a178b1e.chunk.js",
@@ -12,13 +12,13 @@
     "index.html": "/index.html",
     "static/css/main.a1998dfe.chunk.css.map": "/static/css/main.a1998dfe.chunk.css.map",
     "static/js/2.4a178b1e.chunk.js.LICENSE.txt": "/static/js/2.4a178b1e.chunk.js.LICENSE.txt",
-    "static/media/cancel.17825c74.svg": "/static/media/cancel.17825c74.svg",
+    "static/media/cancel.5bec4f69.svg": "/static/media/cancel.5bec4f69.svg",
     "static/media/corlog.d898a50a.png": "/static/media/corlog.d898a50a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3ce1144b.js",
     "static/js/2.4a178b1e.chunk.js",
     "static/css/main.a1998dfe.chunk.css",
-    "static/js/main.b35fb1c8.chunk.js"
+    "static/js/main.ac5c6b45.chunk.js"
   ]
 }
