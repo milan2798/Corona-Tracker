@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import {  useState, useRef } from 'react';
 import cancel from './cancel.svg';
 import Card from './Card'
 
@@ -7,7 +7,7 @@ import Card from './Card'
 const Searchspan = ({ spantext, info, setsearchCard, setsearchData, searchCard }) => {
     let data = [];
     let disdata = [];
-    let searchdata = [];
+    
     let searcheddata = [];
     let dummy = [];
 
@@ -31,7 +31,7 @@ const Searchspan = ({ spantext, info, setsearchCard, setsearchData, searchCard }
         // console.log("ssss",disdata[0])
 
 
-        searchdata = disdata.map((item) => item.map((item2) => {
+        disdata.map((item) => item.map((item2) => {
             if (item2.toLowerCase().startsWith(spantext.toLowerCase())) {
                 searcheddata.push(item2)
             }
@@ -62,7 +62,7 @@ const Search = ({ info }) => {
     console.log("SearchMainrender");
     const inputRef = useRef("");
     let keys = [];
-    let dkeys = [];
+ 
     const [spclass, setspclass] = useState("search-placeholder")
     const [searchText, setsearhText] = useState("")
     const [searchCard, setsearchCard] = useState("")
@@ -70,12 +70,12 @@ const Search = ({ info }) => {
     const disSpan = () => {
         setspclass("disappear");
     }
-    const appSpan = () => {
-        setspclass("search-placeholder");
-        inputRef.current.value = "";
-        setsearhText("");
-        setsearchData({});
-    }
+    // const appSpan = () => {
+    //     setspclass("search-placeholder");
+    //     inputRef.current.value = "";
+    //     setsearhText("");
+    //     setsearchData({});
+    // }
     const handleInput = (e) => {
         setsearhText(e.target.value);
         setsearchCard("");
