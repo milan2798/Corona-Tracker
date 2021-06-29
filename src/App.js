@@ -4,8 +4,21 @@ import Info from './Component/api.js'
 import Table from './Component/Table.js'
 import Card from './Component/Card.js'
 import Search from './Component/Search';
+import Darkmode from 'darkmode-js';
 
-
+const options = {
+  bottom: '50px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '32px', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#e8e9d9', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: false, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+}
 function App() {
 
 
@@ -26,6 +39,7 @@ function App() {
 
   return (
     <div className="App">
+      {new Darkmode(options).showWidget()}
       <div className="header">
         <div className="inheader">
           <h1>Corona Tracker</h1>
@@ -48,7 +62,7 @@ function App() {
 
       </div>
         : <h3>Data is Loading Please wait......</h3>}
-
+    
 
       <h2 className="statename"><span>States Info</span></h2>
       <hr style={{ marginBottom: "20px", width: "80%" }}></hr>
