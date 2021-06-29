@@ -19,6 +19,10 @@ step 4:
 
 showing details on the page and beutify accordingly
 
+## Update:
+
+Dark-Mode has been implemented
+
 Below are the glimpse of the output :
 
 
